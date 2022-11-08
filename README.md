@@ -1,4 +1,4 @@
-# Lab 13 - Polymorphism
+# Lab 06 - Polymorphism
 This lab focuses on polymorphism in the Java language, any Java object that can pass more than one IS-A test is polymorphic in Java. There will be an additional section at the bottom of this document to help you in your endeavors with this Tuesday lab!
 
 For ease of access, here is the [javadoc](https://www.cs.colostate.edu/~cs163/javadoc/lab13/package-summary.html).
