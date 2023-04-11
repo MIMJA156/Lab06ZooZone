@@ -1,7 +1,7 @@
 # Lab 06 - Polymorphism
 This lab focuses on polymorphism in the Java language, any Java object that can pass more than one IS-A test is polymorphic in Java. There will be an additional section at the bottom of this document to help you in your endeavors with this Tuesday lab!
 
-For ease of access, here is the [javadoc](https://www.cs.colostate.edu/~cs163/javadoc/lab13/package-summary.html).
+For ease of access, here is the [javadoc](https://csu-compsci-cs163-4.github.io/Lab13Polymorphism/package-summary.html).
 
 ## Pre-Step: Walkthrough & Compilation
 You know the drill for Tuesday labs, start in the `main` function, located in `ZooMain`, and follow the program flow to gain an understanding as to what this program is doing. As you briefly view the classes in the Flora and Fauna folders, notice the use of the `extends` keyword in the class signature.
