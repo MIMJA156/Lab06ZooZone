@@ -1,4 +1,4 @@
-# Lab13 ZooZone
+# Lab06 ZooZone
 For this lab, you will be building on your work from Lab05. 
 # Step 1 -- Writing the Methods
 For this lab, you will be expected to complete the following methods:
