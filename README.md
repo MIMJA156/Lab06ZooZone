@@ -1,5 +1,8 @@
-# Lab06 ZooZone
-For this lab, you will be building on your work from Lab05. 
+# Lab06 ZooZone 
+
+# Participation
+For participation points, follow good coding practices by writing out pseudocode for the methods you must complete before getting started. Make sure to show this pseudocode to a TA for credit!
+
 # Step 1 -- Writing the Methods
 For this lab, you will be expected to complete the following methods:
 
