@@ -1,4 +1,5 @@
 # Lab06 ZooZone 
+For this lab, you will be playing with some properties of polymorphism to help a zoo move its animals to new enclosures.
 
 # Participation
 For participation points, follow good coding practices by writing out pseudocode for the methods you must complete before getting started. Make sure to show this pseudocode to a TA for credit!
