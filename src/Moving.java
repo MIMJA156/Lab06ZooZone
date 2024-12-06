@@ -33,7 +33,34 @@ public class Moving {
     public void movingBoxes(String filename){
         try {
             Scanner animals = new Scanner(new File(filename));
-            //TODO STUDENT
+            while (animals.hasNextLine()){
+                String[] tokens = animals.nextLine().split(" ");
+                String type = tokens[0];
+                String name = tokens[1];
+
+                switch (type) {
+                    case "gecko":
+                        ReptilesBox.add(new Gecko(name));
+                        break;
+                    case "lizard":
+                        ReptilesBox.add(new Lizard(name));
+                        break;
+
+                    case "lion":
+                        FelinesBox.add(new Lion(name));
+                        break;
+                    case "tiger":
+                        FelinesBox.add(new Tiger(name));
+                        break;
+
+                    case "toucan":
+                        BirdsBox.add(new Toucan(name));
+                        break;
+                    case "parrot":
+                        BirdsBox.add(new Parrot(name));
+                        break;
+                }
+            }
         }
         catch (FileNotFoundException e){
             System.out.println("Uh oh! I couldn't find your file!!");
@@ -79,19 +106,27 @@ public class Moving {
         int lizards = 0;
         int geckos = 0;
 
-        for (int i = 0; i < BirdsBox.size(); i++){
-            if (BirdsBox.get(i) instanceof Parrot){
-                parrots++;
-            }
-            if (BirdsBox.get(i) instanceof Toucan){
-                toucans++;
-            }
+        for (Reptile reptile : ReptilesBox){
+            if (reptile instanceof Gecko){  geckos++; }
+            if (reptile instanceof Lizard){ lizards++; }
+            reptiles++;
+        }
+
+        for (Feline feline : FelinesBox){
+            if (feline instanceof Lion){  lions++; }
+            if (feline instanceof Tiger){ tigers++; }
+            felines++;
+        }
+
+        for (Bird bird : BirdsBox){
+            if (bird instanceof Parrot){  parrots++; }
+            if (bird instanceof Toucan){ toucans++; }
             birds++;
         }
 
         counts += String.format("Birds = %s\nToucans = %s\nParrots = %s\n", birds, toucans, parrots);
-
-        //TODO STUDENT
+        counts += String.format("Felines = %s\nLions = %s\nTigers = %s\n", felines, lions, tigers);
+        counts += String.format("Reptiles = %s\nLizards = %s\nGeckos = %s\n", reptiles, lizards, geckos);
         return counts;
     }
 
